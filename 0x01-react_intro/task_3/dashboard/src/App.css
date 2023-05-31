@@ -1,0 +1,68 @@
+.App {
+  /* text-align: center; */
+  background-color: #fff;
+  max-height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* header */
+.App-header {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: row;
+  gap: 0 1rem;
+  align-items: center;
+  justify-self: flex-start;
+  /* font-size: calc(10px + 2vmin); */
+  color: rgb(222, 42, 42);
+  border-bottom: 0.18rem solid red;
+}
+.App-header img {
+  display: flex;
+  align-self: flex-end;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 0;
+}
+.App-header h1 {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  font-size: 2rem;
+}
+/* link */
+.App-link {
+  color: #61dafb;
+}
+/* Body */
+.App-body {
+  height: 30rem;
+  border-bottom: 0.18rem solid red;
+}
+.App-body {
+  padding-left: 2.5rem;
+}
+.App-body p {
+  display: flex;
+  margin-top: 2rem;
+}
+.App-body .modified {
+  display: flex;
+  text-align: center;
+  gap: 0 1rem;
+}
+/* Footer */
+.App-footer p {
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.App-footer {
+  height: 20%;
+}
+
