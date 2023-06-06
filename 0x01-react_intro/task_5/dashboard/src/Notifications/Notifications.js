@@ -3,37 +3,37 @@ import "./Notifications.css";
 import closeIcon from "../assets/close-icon.png";
 import { getLatestNotification } from "../utils/utils";
 
-function Notifications() {
+const styles = {
+  position: "relative",
+  float: "right",
+  bottom: "55px",
+  border: "none",
+  opacity: "0.7",
+  background: "transparent",
+  cursor: "Pointer",
+};
+
+function printOnClick() {
+  console.log("Close button has been clicked");
+}
+
+const notification = getLatestNotification();
+
+export default function Notifications() {
   return (
     <div className="Notifications">
-      <button
-        style={{
-          color: "#3a3a3a",
-          fontWeight: "bold",
-          background: "none",
-          border: "none",
-          fontSize: "15px",
-          position: "absolute",
-          right: "2px",
-          top: "2px",
-          cursor: "pointer",
-        }}
-        aria-label="Close"
-        onClick={console.log("Close button has been clicked")}
-      >
-        <img src={closeIcon} alt="closeIcon" width="10px" />
-      </button>
       <p>Here is the list of notifications</p>
+      <button style={styles} arial-label="Close" onClick={printOnClick}>
+        <img src={closeIcon} alt="Close" width="8px" />
+      </button>
       <ul>
         <li data="default">New course available</li>
         <li data="urgent">New resume available</li>
         <li
           data="urgent"
-          dangerouslySetInnerHTML={{ __html: getLatestNotification() }}
+          dangerouslySetInnerHTML={{ __html: notification }}
         ></li>
       </ul>
     </div>
   );
 }
-
-export default Notifications;
