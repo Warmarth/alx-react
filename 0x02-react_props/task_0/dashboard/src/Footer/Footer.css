@@ -1,0 +1,10 @@
+/* Footer */
+.App-footer p {
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.App-footer {
+  height: 20%;
+}
