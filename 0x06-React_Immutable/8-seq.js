@@ -22,3 +22,4 @@ export default function printBestStudents(object) {
 
   console.log(JSObject);
 }
+
